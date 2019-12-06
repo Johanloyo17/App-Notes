@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <Home/>
   </div>
-  
 </template>
 
 <script>
 
-
+import Home from'@/views/Home'
 export default {
   name: 'app',
   components: {
-    
+    Home
   }
 }
 </script>
@@ -20,5 +19,7 @@ export default {
   *
     margin  0 
     padding  0 
-
+  a
+    text-decoration none 
+    
 </style>

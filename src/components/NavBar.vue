@@ -1,14 +1,23 @@
 <template>
     <div class="navbar ">
-        <div class="navbar_brand">Page</div>
+        
+        <router-link to="Home"> 
+            <div class="navbar_brand">Page</div>
+        </router-link>
         <div class="navbar_items h-100 flex_y_center">
             <span class="navbar_items_item color-sucess">service</span>
             <span class="navbar_items_item">Proyect</span>
             <span class="navbar_items_item">About us</span>
         </div>
-        <div class="navbar_actions" >
-            <el-button type="info" plain icon="el-icon-star-off">Register</el-button>
-            <el-button type="info" plain rounded>Log in</el-button>
+
+        <div class="navbar_actions">
+            <router-link to="Register">
+                <el-button type="info" plain icon="el-icon-star-off">Register</el-button>
+            </router-link>
+
+            <router-link to="LogIn">
+                <el-button type="info" plain rounded router>Log in</el-button>
+            </router-link>
         </div>
     </div>
 </template>
